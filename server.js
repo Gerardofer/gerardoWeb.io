@@ -5,7 +5,10 @@ const app = express();
 
 const PORT = process.env.PORT || 8080;
 
-mongoose.connect("mongodb://localhost/gerardoProfile");
+var MONGODB_URI =
+  process.env.MONGODB_URI || "mongodb://localhost/gerardoProfile";
+mongoose.Promise = Promise;
+mongoose.connect(MONGODB_URI);
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
