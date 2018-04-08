@@ -1,0 +1,29 @@
+<% include ./partials/header %>
+    <link rel="stylesheet" href="/css/portfolio.css">
+
+    <% profile.forEach((element) => { %>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h2>
+                        <%= element.title %>
+                    </h2>
+                </div>
+                <div class="col s4">
+                    <a href="<%= element.website %>">
+                        <img class="z-depth-4" src="<%= element.image %>" alt="Some Image">
+                    </a>
+                </div>
+                <div class="col s8">
+                    <p>
+                        <%= element.info %>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <% }) %>
+
+
+
+            <% include ./partials/footer %>

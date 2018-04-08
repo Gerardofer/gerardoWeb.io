@@ -1,0 +1,47 @@
+body {
+  background-image: url("/images/daniel-lee-365244-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Philosopher", sans-serif;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+h4 {
+  font-size: 25px;
+}
+
+#welcome {
+  font-family: "Marck Script", cursive;
+  margin-top: 10%;
+  font-size: 80px;
+  color: #dad7db;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 1);
+}
+
+hr {
+  width: 80%;
+  height: 30px;
+  border-style: solid;
+  border-color: #939393;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #939393;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-top: 0;
+}
