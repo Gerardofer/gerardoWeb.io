@@ -6,11 +6,12 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 var MONGODB_URI =
-  process.env.MONGODB_URI || "mongodb://localhost/gerardoProfile";
+  process.env.MONGODB_URI ||
+  "mongodb://heroku_rxzz7r7w:vsboo5o283v2c19ntbuendnjcc@ds155651.mlab.com:55651/heroku_rxzz7r7w";
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI);
 
-app.set("view engine", "ejs");
+mongodb: app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
