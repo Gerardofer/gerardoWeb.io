@@ -6,8 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 var MONGODB_URI =
-  process.env.MONGODB_URI ||
-  "mongodb://heroku_rxzz7r7w:vsboo5o283v2c19ntbuendnjcc@ds155651.mlab.com:55651/heroku_rxzz7r7w";
+  process.env.MONGODB_URI || "mongodb://localhost/gerardoProfile";
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI);
 
