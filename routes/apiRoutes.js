@@ -13,6 +13,10 @@ module.exports = app => {
     res.render("about");
   });
 
+  app.get("/contact", (req, res) => {
+    res.render("contact");
+  });
+
   app.get("/portfolio", (req, res) => {
     db.Profile.find({}, (err, allProfile) => {
       if (err) {
